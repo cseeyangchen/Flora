@@ -15,7 +15,7 @@
 <div> 
 PolyU<sup>1</sup>&nbsp&nbsp&nbsp&nbsp;
 CUG<sup>2</sup>&nbsp&nbsp&nbsp&nbsp;
-HKUST<sup>2</sup>&nbsp&nbsp&nbsp&nbsp;
+HKUST<sup>3</sup>&nbsp&nbsp&nbsp&nbsp;
 </div>
 
 <div>
@@ -39,7 +39,7 @@ This repo is the official implementation for "Learning by Neighbor-Aware Semanti
 ---
 
 ## 📢 News
-- **Nov 07, 2025:** This repository is created and the code is uploaded
+- **Nov 07, 2025:** This repository has been created, and the code has been uploaded!
 
 ## 📋 Contents
 - [Data Preparation](#-data_preparation)
@@ -52,7 +52,7 @@ This repo is the official implementation for "Learning by Neighbor-Aware Semanti
 <a id="-data_preparation"></a>
 
 We provide two options for data preparation:
- - **From scratch**: You can download the raw skeleton sequences and extract the skeleton features yourself. We provide all the pre-trained Shift-GCN weights required for this process. Additionally, you can also train the Shift-GCN by yourself follow the procedure of Shitf-GCN, meanwhile, we also provide the training scripts and introduce them below.
+ - **From scratch**: You can download the raw skeleton sequences and extract the skeleton features yourself. We provide all the pre-trained Shift-GCN weights required for this process. Additionally, you can also train the Shift-GCN by yourself, following the procedure of Shift-GCN. Meanwhile, we also provide the training scripts, which are introduced below.
  - **Using pre-extracted features**: Alternatively, you can directly download the pre-extracted Shift-GCN skeleton features. We unify the feature formats from SynSE, SA-DAVE, STAR, and ours to ensure consistency across datasets. 
 
 Further details about dataset splits can be found in our supplementary materials.
