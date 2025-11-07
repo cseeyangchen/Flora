@@ -1,0 +1,66 @@
+# seed
+seed: 1 
+
+# output_dir
+out_dir: output/purls_flora/ntu60_xsub_seen30_unseen30
+
+# dataset
+task_name: ntu60_xsub_seen30_unseen30
+
+# shiftgcn arch
+num_class: 30
+num_point: 25
+num_person: 2
+graph: graph.ntu_rgb_d.Graph
+graph_args:
+  labeling_mode: 'spatial'
+
+# flow matching arch
+sigma_min: 1e-5   
+sigma_max: 1.0
+ske_dim: 256  
+latent_dim: 768  
+text_dim: 1536 
+dit_layers: 1  
+num_heads: 12  
+mlp_ratio: 4.0  
+lambda_cfm: 0.1  
+lambda_align: 0.1
+
+# pretrained models checkpoint
+shiftgcn_checkpoint_path: pretrain_skeleton/save_models/ntu60_ShiftGCN_xsub_seen30_unseen30.pt
+clip_checkpoint_path: clip-vit-large-patch14-336
+
+# optimization
+lr: 1e-4  
+weight_decay: 0.01  
+
+## dataloader 
+align_iter: 1000
+total_iter: 1200
+train_batch_size: 64  
+test_batch_size: 64  
+print_iter: 10 
+eval_iter: 10 
+
+# test
+step_ratio: 0.5   # velocity timestep ratio
+
+# feeder
+feeder: feeders.feeder_ntu.Feeder
+data_path: skeleton_features/flora_features/ntu60_xsub_seen30_unseen30.npz  # or use data/ntu60/NTU60_CS.npz
+use_features: True  
+low_shot: False
+percentage: 0.1   # sample ratio for low shot learning
+num_worker: 32
+
+# semantics data path
+semantic_path: semantics
+max_length: 35   
+topk: 3  
+mixed_weights: [0.5, 0.5]
+
+# GZSL
+calibration_factor: 0.75 
+
+setting: ZSL   # ZSL or GZSL

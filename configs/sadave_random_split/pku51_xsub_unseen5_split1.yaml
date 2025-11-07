@@ -1,0 +1,66 @@
+# seed
+seed: 1 
+
+# output_dir
+out_dir: output/sadave_random_split/pku51_xsub_seen46_unseen5_sadave_split1
+
+# dataset
+task_name: pku51_xsub_seen46_unseen5_sadave_split1
+
+# shiftgcn arch
+num_class: 55
+num_point: 25
+num_person: 2
+graph: graph.ntu_rgb_d.Graph
+graph_args:
+  labeling_mode: 'spatial'
+
+# flow matching arch
+sigma_min: 1e-5    
+sigma_max: 1.0
+ske_dim: 256  
+latent_dim: 768   
+text_dim: 1536  
+dit_layers: 1  
+num_heads: 12   
+mlp_ratio: 4.0  
+lambda_cfm: 0.1  
+lambda_align: 0.1
+
+# pretrained models checkpoint
+shiftgcn_checkpoint_path: # if use pretrained skeleton features, this could be empty
+clip_checkpoint_path: clip-vit-large-patch14-336
+
+# optimization
+lr: 1e-4  
+weight_decay: 0.01  
+
+## dataloader 
+align_iter: 1000
+total_iter: 1200
+train_batch_size: 64 
+test_batch_size: 64   
+print_iter: 10 
+eval_iter: 10 
+
+# test
+step_ratio: 0.5
+
+# feeder
+feeder: feeders.feeder_pku.Feeder
+data_path: skeleton_features/sadave_features/pku51_seen46_unseen5_split1.npz
+use_features: True  
+low_shot: False
+percentage: 0.1   # sample ratio for low shot learning
+num_worker: 32
+
+# semantics data path
+semantic_path: semantics
+max_length: 60   
+topk: 3 
+mixed_weights: [0.8, 0.1]
+
+# GZSL
+calibration_factor: 0.45 
+
+setting: ZSL   # ZSL or GZSL

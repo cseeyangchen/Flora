@@ -1,0 +1,34 @@
+Experiment_name: pku51_ShiftGCN_xsub_seen46_unseen5_split3
+task_name: pku51_xsub_seen46_unseen5_starsmie_split3
+
+# feeder
+feeder: feeders.feeder_pku.Feeder
+data_path: ../data/pkummd/part1/pkuv1_xsub.npz
+num_worker: 32
+
+# model
+model: model.shift_gcn.Model
+model_args:
+  num_class: 46
+  num_point: 25
+  num_person: 2
+  graph: graph.ntu_rgb_d.Graph
+  graph_args:
+    labeling_mode: 'spatial'
+
+#optim
+weight_decay: 0.0001
+base_lr: 0.1
+step: [60, 80]
+
+# training
+device: [0]
+only_train_epoch: 1
+batch_size: 32
+test_batch_size: 64
+num_epoch: 100
+nesterov: True
+
+# # extract features
+# weights: save_models/pku51_ShiftGCN_xsub_seen46_unseen5_split3.pt
+# feeder: feeders.feeder_pku.Feeder_Extractor
