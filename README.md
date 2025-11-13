@@ -237,7 +237,7 @@ python main.py --config configs/starsmie_random_split/ntu60_xsub_unseen5_split1.
 # Train Flora on More Challenging Seen-Unseen Benchmark (PURLS benchmark & our pre-trained features -- 1s-Shift-GCN) for the NTU-60 (40/20 Split)
 python main.py --config configs/purls_flora/ntu60_xsub_unseen20.yaml
 
-# Train Flora on Low-shot Training Sample （1% training data） Benchmark (SynSE benchmark -- 4s-Shift-GCN) for the NTU-60 (55/5 Split) 
+# Train Flora on Low-shot Training Sample （10% training data） Benchmark (SynSE benchmark -- 4s-Shift-GCN) for the NTU-60 (55/5 Split) 
 python main.py --config configs/synse/ntu60_xsub_unseen5.yaml --low-shot --percentage 0.1
 ```
 > **Note:** The default evaluation setting in the configuration file is `ZSL`. To evaluate under the GZSL setting, please change the `setting` in the configuration file to `GZSL`. 
