@@ -255,7 +255,7 @@ Please cite this work if you find it useful:
   title={Learning by Neighbor-Aware Semantics, Deciding by Open-form Flows: Towards Robust Zero-Shot Skeleton Action Recognition},
   author={Chen, Yang and Li, Miaoge and Rao, Zhijie and Zeng, Deze and Guo, Song and Guo, Jingcai},
   journal={arXiv preprint arXiv:2511.09388},
-  year={2025},
-  url={https://arxiv.org/abs/2511.09388}
+  url={https://arxiv.org/abs/2511.09388},
+  year={2025}
 }
 ```
