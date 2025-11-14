@@ -39,7 +39,9 @@ This repo is the official implementation for "Learning by Neighbor-Aware Semanti
 ---
 
 ## 📢 News
+- **Nov 14, 2025:** Our paper is now available on arXiv!
 - **Nov 07, 2025:** This repository has been created, and the code has been uploaded!
+
 
 ## 📋 Contents
 - [Data Preparation](#-data_preparation)
