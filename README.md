@@ -20,9 +20,9 @@ HKUST<sup>3</sup>&nbsp&nbsp&nbsp&nbsp;
 
 <div>
     <h4 align="center">
-        <!-- <a href="xxxx" target='_blank'>
-        <img src="https://img.shields.io/badge/arXiv-2501.09411-b31b1b.svg">
-        </a> -->
+        <a href="https://arxiv.org/abs/2511.09388" target='_blank'>
+        <img src="https://img.shields.io/badge/arXiv-2511.09388-b31b1b.svg">
+        </a>
         <img alt="GitHub Repo stars" src="https://img.shields.io/github/stars/cseeyangchen/Flora">
     </h4>
 </div>
