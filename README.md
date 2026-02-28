@@ -31,7 +31,7 @@ HKUST<sup>3</sup>&nbsp&nbsp&nbsp&nbsp;
 ---
 
 <h4>
-This repo is the official implementation for "Learning by Neighbor-Aware Semantics, Deciding by Open-form Flows: Towards Robust Zero-Shot Skeleton Action Recognition." 
+This repo is the official implementation for "Learning by Neighbor-Aware Semantics, Deciding by Open-form Flows: Towards Robust Zero-Shot Skeleton Action Recognition" in CVPR Findings 2026 
 </h4>
 
 ![](src/framework.png)
