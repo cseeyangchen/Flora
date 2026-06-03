@@ -20,6 +20,7 @@ HKUST<sup>3</sup>&nbsp&nbsp&nbsp&nbsp;
 
 <div>
     <h4 align="center">
+        [![CVPR 2026 Findings](https://img.shields.io/badge/CVPR%202026-Findings-blue.svg)]([https://arxiv.org/abs/xxxx.xxxxx](https://openaccess.thecvf.com/content/CVPR2026F/html/Chen_Learning_by_Neighbor-Aware_Semantics_Deciding_by_Open-Form_Flows_Towards_Robust_CVPRF_2026_paper.html))
         <a href="https://arxiv.org/abs/2511.09388" target='_blank'>
         <img src="https://img.shields.io/badge/arXiv-2511.09388-b31b1b.svg">
         </a>
