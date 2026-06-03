@@ -254,11 +254,12 @@ Thanks to the authors for their work!
 
 Please cite this work if you find it useful:
 ```
-@article{chen2025flora,
-  title={Learning by Neighbor-Aware Semantics, Deciding by Open-form Flows: Towards Robust Zero-Shot Skeleton Action Recognition},
-  author={Chen, Yang and Li, Miaoge and Rao, Zhijie and Zeng, Deze and Guo, Song and Guo, Jingcai},
-  journal={arXiv preprint arXiv:2511.09388},
-  url={https://arxiv.org/abs/2511.09388},
-  year={2025}
+@InProceedings{chen2026flora,
+    author    = {Chen, Yang and Li, Miaoge and Rao, Zhijie and Zeng, Deze and Guo, Song and Guo, Jingcai},
+    title     = {Learning by Neighbor-Aware Semantics, Deciding by Open-Form Flows: Towards Robust Zero-Shot Skeleton Action Recognition},
+    booktitle = {Proceedings of the IEEE/CVF Conference on Computer Vision and Pattern Recognition (CVPR) Findings},
+    month     = {June},
+    year      = {2026},
+    pages     = {3374-3383}
 }
 ```
