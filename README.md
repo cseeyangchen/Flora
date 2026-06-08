@@ -42,6 +42,7 @@ This repo is the official implementation for "Learning by Neighbor-Aware Semanti
 ---
 
 ## 📢 News
+- **Jun 07, 2026:** Our paper is recognized with the CVPR Compute Transparency Champion award!
 - **Feb 21, 2026:** Our paper is accepted by CVPR 2026 Findings Track!
 - **Nov 14, 2025:** Our paper is now available on arXiv!
 - **Nov 07, 2025:** This repository has been created, and the code has been uploaded!
